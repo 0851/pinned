@@ -1,0 +1,50 @@
+{
+  "ext_name": {
+    "message": "Pinned Tabs",
+    "description": ""
+  },
+  "ext_name_sort": {
+    "message": "Pinned Tabs",
+    "description": ""
+  },
+  "ext_description": {
+    "message": "Keep Pinned Tabs When Open New Window",
+    "description": ""
+  },
+  "ext_add_pinned": {
+    "message": "Save Pinned Tabs Group",
+    "description": ""
+  },
+  "ext_use_pinned": {
+    "message": "Use Pinned Tabs Group",
+    "description": ""
+  },
+  "ext_op_add": {
+    "message": "Add",
+    "description": ""
+  },
+  "ext_op_clean": {
+    "message": "Clean",
+    "description": ""
+  },
+  "ext_op_disable": {
+    "message": "Disable",
+    "description": ""
+  },
+  "ext_op_enable": {
+    "message": "Enable",
+    "description": ""
+  },
+  "ext_op_disabled": {
+    "message": "Disabled",
+    "description": ""
+  },
+  "ext_op_enabled": {
+    "message": "Enabled",
+    "description": ""
+  },
+  "ext_op_del": {
+    "message": "Del",
+    "description": ""
+  }
+}

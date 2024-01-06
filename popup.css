@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+body {
+    font-size: 12px;
+    font-family: Calibri;
+    color: #333;
+    padding: 15px;
+    display: inline-block;
+}
+
+
+.loading {
+    position: fixed;
+    height: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #6bc30d;
+    transition: all 500ms linear;
+    animation: pulse 2s ease-out 0s 1;
+}
+
+.loading.end {
+    background: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        width: 0;
+    }
+    30% {
+        width: 30%;
+    }
+    60% {
+        width: 60%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.error {
+    color: #ff5531;
+    margin-bottom: 10px;
+}
+
+.top, .record, .tab-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.input, .btn {
+    line-height: 16px;
+    padding: 5px 8px;
+    user-focus: none;
+    user-select: none;
+    border-radius: 2px;
+    word-break: keep-all;
+    border: 1px solid #dfdfdf;
+}
+
+.input {
+    min-width: 180px;
+}
+
+.btn {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 120px;
+}
+
+.records {
+    margin-top: 15px;
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    max-height: 230px;
+    overflow: auto;
+}
+
+.records .btn {
+    line-height: 12px;
+}
+
+.record-tabs {
+    margin-left: 12px;
+}
+
+.record-item {
+    border-bottom: 1px dotted #dfdfdf;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-item {
+    margin-top: 5px;
+}
+
+.tab-title {
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 180px;
+    color: #333;
+    text-decoration: none;
+}
+
+.tab-title:hover {
+    color: lightseagreen;
+    text-decoration: underline;
+}
+
+.tab-icon {
+    height: 12px;
+    width: 12px;
+}
+
+.record {
+    justify-content: space-between;
+}
+
+.record:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.btns {
+    float: right;
+}
+
+
+.disable {
+    color: #ff8a65;
+}
+
+.enable {
+    color: #81c784;
+}

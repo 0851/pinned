@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div id="app"></div>
+<script id="app-template" type="text/template">
+    <div>
+        <div class="loading" If={loading}></div>
+        <div class="loading end" Else></div>
+        <div class="error" If={error}>{error}</div>
+        <div Else></div>
+        <div class="top">
+            <input class="input" type="text" @keyup={keyup($event)} @bind={name}/>
+            <button class="btn add" @click={add()}>{trans.add}</button>
+            <button class="btn clean" @click={clean()}>{trans.clean}</button>
+        </div>
+
+        <ul class="records">
+            <li class="record-item" For={$record in records}>
+                <div class="record">
+                    <span class="name">{$record.name}</span>
+                    <div class="btns">
+                        <button class="btn" title={$record.enabled===true?trans.enabled:trans.disabled}
+                                @click={enabled($record)}>
+                            <span class="status disable" If={$record.enabled}>{trans.disable}</span>
+                            <span class="status enable" Else>{trans.enable}</span>
+                        </button>
+                        <button class="btn del" @click={del($record)}>{trans.del}</button>
+                    </div>
+                </div>
+                <ul class="record-tabs" For={$tab in $record.tabs}>
+                    <li class="tab-item">
+                        <img class="tab-icon" src={$tab.favIconUrl?$tab.favIconUrl:"images/unknown.png"}/>
+                        <a href={$tab.url} title={$tab.url} target="_blank" class="tab-title">{$tab.title}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</script>
+<script src="lib/moon.min.js"></script>
+<script src="common.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

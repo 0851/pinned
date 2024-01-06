@@ -1,0 +1,50 @@
+{
+  "ext_name": {
+    "message": "固定标签",
+    "description": ""
+  },
+  "ext_name_sort": {
+    "message": "固定标签",
+    "description": ""
+  },
+  "ext_description": {
+    "message": "打开固定标签 , 在新开窗口",
+    "description": ""
+  },
+  "ext_add_pinned": {
+    "message": "保存固定组",
+    "description": ""
+  },
+  "ext_use_pinned": {
+    "message": "使用固定组",
+    "description": ""
+  },
+  "ext_op_add": {
+    "message": "添加",
+    "description": ""
+  },
+  "ext_op_clean": {
+    "message": "清空",
+    "description": ""
+  },
+  "ext_op_disable": {
+    "message": "禁用",
+    "description": ""
+  },
+  "ext_op_enable": {
+    "message": "启用",
+    "description": ""
+  },
+  "ext_op_disabled": {
+    "message": "已禁用",
+    "description": ""
+  },
+  "ext_op_enabled": {
+    "message": "已启用",
+    "description": ""
+  },
+  "ext_op_del": {
+    "message": "删除",
+    "description": ""
+  }
+}
